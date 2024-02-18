@@ -1,0 +1,151 @@
+.ProductDisplay{
+    display: flex;
+    height: auto; 
+    padding: 50px;
+    
+  
+}
+.ProductDisplay-left{
+    display: flex;
+   
+    
+    margin-left: 30px;
+}
+.productdisplay-img-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+     
+}
+.productdisplay-img-list img{
+  
+ 
+height: 97px;
+ 
+}
+.ProductDisplay-img{
+    margin-left: 10px;
+    height: 100%;
+  
+}
+.ProductDisplay-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 100%;
+}
+.productdisplay-right-star{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+
+}
+.productdisplay-right-star img{
+    height: 12px;
+    width: 12px;
+}
+.productdisplay-right-star p{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.productdisplay-right-price{
+    display: flex;
+    margin-top: 15px;
+}
+.productdisplay-right-price-old{
+   
+    text-decoration: line-through;
+    font-weight: 600;
+}
+.productdisplay-right-price-new{
+   
+    
+    font-weight: 600;
+    margin-left: 13px;
+    color: brown;
+}
+.productdisplay-right-description{
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.productdisplay-right-size{
+    margin-top: 20px;
+    gap: 2px;
+    
+}
+.productdisplay-right-sizes{
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 8px;
+}
+.productdisplay-right-sizes div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 240, 240);
+    height: 40px;
+    width:40px;
+    border: none;
+}
+.ProductDisplay-right button{
+    width: 120px;
+    height: 40px;
+    color: white;
+    background: #ff4141;
+    margin-top: 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.productdisplay-right-category{
+   margin-top: 5px;
+    font-size: 12px;
+}
+.productdisplay-right-category span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .ProductDisplay {
+        flex-direction: column; /* Stack items in a column on small screens */
+        align-items: center; /* Center the content horizontally */
+    }
+
+    .ProductDisplay-left,
+    .ProductDisplay-right {
+        margin-right: 0;
+    }
+
+    .ProductDisplay-right {
+        margin-top: 0;
+    }
+}
+
+/* Additional responsive adjustments for very small screens */
+@media (max-width: 480px) {
+    .ProductDisplay {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    .ProductDisplay-left,
+    .ProductDisplay-right {
+        margin-left: 12px; /* Remove margin for very small screens */
+    }
+
+    .ProductDisplay-left {
+        margin-bottom: 10px; /* Adjust margin for spacing between left and right sections on very small screens */
+    }
+
+    .ProductDisplay-img {
+        margin-top: 0; /* Adjust margin for spacing between the images and the big image on very small screens */
+    }
+}

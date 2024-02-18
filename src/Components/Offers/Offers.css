@@ -1,0 +1,82 @@
+.offers {
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    padding: 0px 20px; /* Adjust padding for smaller screens */
+    margin: auto;
+    margin-bottom: 10px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  }
+  
+  .offers-left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* Center text on smaller screens */
+  }
+  
+  .offers-left h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+    font-weight: 600;
+    color: #171717;
+  }
+  
+  .offers-left p {
+    color: #171717;
+    font-size: 18px; /* Adjust font size for smaller screens */
+    font-weight: 600;
+  }
+  
+  .offers-left button {
+    height: 70px;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+     
+  
+  }
+  
+  .offers-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .offers-right img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Media Query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .offers {
+      flex-direction: column; /* Stack columns on smaller screens */
+    }
+  
+    .offers-left h1 {
+      font-size: 32px; /* Adjust font size for smaller screens */
+    }
+  
+    .offers-left p {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  
+    .offers-left button {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+    .offers-right img {
+      width: 100%;
+      height: auto;
+       
+    }
+    
+  }
+  

@@ -1,0 +1,28 @@
+.breadcrums{
+    display: flex;
+    padding-left: 80px;
+    padding-top: 40px;
+    font-weight: 600;
+    align-items: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    gap: 5px;
+}
+
+/* Responsive styles for medium-sized screens */
+@media (max-width: 768px) {
+    .breadcrums {
+        padding-left: 40px; /* Adjust padding for medium-sized screens */
+    }
+}
+
+/* Responsive styles for small-sized screens */
+@media (max-width: 576px) {
+    .breadcrums {
+        /* Stack items in a column on small screens */
+        align-items: flex-start; /* Align items to the start of the column */
+        padding-left: 20px; /* Adjust padding for small screens */
+        padding-top: 20px; /* Adjust padding for small screens */
+        font-size: 10px;
+    }
+}

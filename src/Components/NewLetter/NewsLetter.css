@@ -1,0 +1,122 @@
+.newsLetter{
+    width: 65%;
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px  40px;
+    /* margin-bottom: 150px; */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+    .newsLetter h1{
+        color: #454545;
+        font-size: 55px;
+        font-weight: 600;
+    }
+    .newsLetter p{
+        color: #454545;
+        font-size: 20px;
+    }
+    .newsLetter div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        width: 80%;
+        height: 70px;
+        border-radius: 80px;
+        border: 1px solid;
+    }
+    .newsLetter input{
+         
+        width: 500px;
+        margin-left: 30px;
+        outline: none;
+        border: none;
+        color: #616161;
+        font-family: poppins;
+        font-size: 15px;
+    }
+    .newsLetter div button{
+        
+        width: 210px;
+        height: 70px;
+        border-radius: 80px;
+        background: black;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+  /* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .newsLetter h1 {
+      font-size: 32px; /* Adjust font size for smaller screens */
+    }
+  
+    .newsLetter p {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  
+    .newsLetter div {
+      width: 100%; /* Adjusted width for smaller screens */
+      height: 50px;
+      color: ye;
+    }
+   
+    .newsLetter div button {
+      max-width: none; /* Removed max-width for full-width elements on smaller screens */
+      height: 100%;
+      border: none;
+      font-size: 14px;
+    }
+  }
+  /* Media Query for small screens (576px and below) */
+@media screen and (max-width: 576px) {
+  .newsLetter h1 {
+    font-size: 32px; /* Adjust font size for small screens */
+    text-align: center;
+  }
+
+  .newsLetter p {
+    font-size: 16px; /* Adjust font size for small screens */
+    text-align: center;
+  }
+
+  .newsLetter div {
+    height: 30px; /* Adjusted height for small screens */
+    margin-left: 5px;
+    margin-right: 5px;
+     }
+
+  .newsLetter div button {
+    font-size: 10px; /* Adjust font size for small screens */
+    margin-right: 10px;
+  
+     
+    
+  }
+}
+
+/* Media Query for extra-small screens (360px and below) */
+@media screen and (max-width: 360px) {
+  .newsLetter h1 {
+    font-size: 22px; /* Adjust font size for extra-small screens */
+  }
+
+  .newsLetter p {
+    font-size: 16px; /* Adjust font size for extra-small screens */
+  }
+
+  .newsLetter div {
+    height: 40px; /* Adjusted height for extra-small screens */
+  }
+
+  .newsLetter div button {
+    font-size: 12px; /* Adjust font size for extra-small screens */
+  }
+}
