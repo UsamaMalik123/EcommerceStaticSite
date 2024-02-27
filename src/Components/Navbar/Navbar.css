@@ -1,104 +1,134 @@
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow: 0 1px 3px -2px black;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  box-shadow: 0 1px 3px -2px black;
+  }
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  flex: 1;
 }
-.nav-logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+.nav-logo p {
+  color: gray;
+  font-size: 38px;
+  font-weight: 600;
 }
-.nav-logo p{
-    color: gray;
-    font-size: 38px;
-    font-weight: 600;
+
+.nav-menu-container {
+   
+  display: flex;
+  flex: 2;
+  align-items: center;
+  
+ 
+   
 }
-.nav-menu{
- display: flex;
- align-items: center;
- list-style: none;
- gap: 50px;
- color: gray;
- font-size: 20px;
- font-weight: 500;
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  
 }
-.nav-menu li{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3px;
-    cursor: pointer;
+
+.nav-menu li {
+  cursor: pointer;
 }
-.nav-menu hr{
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background-color: rgb(176, 28, 28);
+
+.nav-menu li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+  font-weight: 500;
 }
-.nav-login-cart{
-    display: flex;
-    align-items: center;
-    gap: 45px;
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
 }
-.nav-login-cart button{
-    width: 157px;
-    height: 58px;
-    outline: none;
-    border: 1px solid #7a7a7a;
-    border-radius: 75px;
-    color: #515151;
-    font-size: 20px;
-    font-weight: 500;
-    background: white;
-    cursor: pointer;
+
+.nav-login-cart img {
+  width: 30px;
+  height: 30px;
 }
-.nav-login-cart button:active{
-    background-color: #f3f3f3;
+
+.nav-cart-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  margin-left: -20px;
+  margin-top: -20px;
 }
-.nav-cart-count{
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    margin-top: -35px;
-    margin-left: -55px;
-    border-radius: 11px;
-    font-size: 14px;
-    background-color: red;
-    color: white;
-}
+
 .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
     display: none;
     flex-direction: column;
-    cursor: pointer;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* You can set a fixed height or use auto */
+    max-height: calc(100vh - 60px); /* Restricting max height to viewport height - 60px for top spacing */
+    overflow-y: auto; /* Adding scroll if content exceeds height */
   }
-  
-  .menu-icon span {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-  }
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+
+  .nav-menu.responsive {
+      display: flex;
       align-items: center;
-    }
-  
-    .nav-menu {
+  }
+
+  .nav-menu li {
+      margin: 2px 0;
+  }
+
+  .menu-icon {
+      display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .nav-login-cart {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 10px;
-    }
+      justify-content: center;
+      position: absolute;
+      top: 30px;
+      right: 20px;
   }
+
+  .nav-login-cart {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nav-logo img{
+    width: 50px; 
+    height: 50px;
+    margin-top: 10px;
+  }
+  .nav-logo p {
+    color: gray;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
